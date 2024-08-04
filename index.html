@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Upload Error</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
-        <div class="flex items-center mb-6">
-<svg class="w-8 h-8 text-red-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <h2 class="text-2xl font-bold text-gray-800">Upload Error</h2>
-        </div>
-        <p class="mb-6 text-gray-600">The PDF you uploaded appears to be image-based. Our system only supports text-based PDFs. Please convert your PDF to a text-based format and try again.</p>
-        <div class="flex justify-center">
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                Okay
-            </button>
-        </div>
-    </div>
+<body>
+    <h1>
+        <svg class="icon" viewBox="0 0 20 20">
+            <circle cx="10" cy="10" r="10" fill="#C00000"/>
+            <text x="10" y="15" font-size="14" fill="white" text-anchor="middle">!</text>
+        </svg>
+        Upload Error
+    </h1>
+    <p>The PDF you uploaded appears to be image-based. Our system only supports text-based PDFs. Please convert your PDF to a text-based format and try again.</p>
+    <button>Okay</button>
 </body>
 </html>
